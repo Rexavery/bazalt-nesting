@@ -2,7 +2,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production --prefer-offline --no-audit
+RUN npm ci --only=production --prefer-offline --no-audit --legacy-peer-deps
 COPY . .
 RUN npm run build
 ENV npm_config_jobs=2
