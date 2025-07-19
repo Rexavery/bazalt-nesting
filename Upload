@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "Railway-ready Bazalt Nesting backend"
+git remote add origin https://github.com/<your-username>/bazalt-nesting-backend.git
+git push -u origin main
