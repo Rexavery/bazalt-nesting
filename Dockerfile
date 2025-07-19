@@ -1,6 +1,4 @@
-...
 COPY package.json ./
 RUN npm install
 COPY . .
 RUN npm ci --only=production
-...
