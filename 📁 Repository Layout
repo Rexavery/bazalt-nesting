@@ -1,0 +1,19 @@
+bazalt-nesting-backend/
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── package.json
+├── tsconfig.json
+├── src/
+│   ├── main.ts
+│   ├── app.module.ts
+│   ├── entities/
+│   │   └── machine.entity.ts
+│   ├── machines/
+│   │   ├── machines.controller.ts
+│   │   ├── machines.service.ts
+│   │   └── machines.module.ts
+│   ├── events/
+│   │   ├── events.gateway.ts
+│   │   └── events.module.ts
+└── README.md
