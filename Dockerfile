@@ -5,7 +5,7 @@ COPY package*.json ./
 RUN npm ci --only=production --prefer-offline --no-audit
 COPY . .
 RUN npm run build
-
+ENV npm_config_jobs=2
 # Stage 2: Production Image
 FROM node:20-alpine
 WORKDIR /app
